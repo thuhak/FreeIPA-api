@@ -1,0 +1,7 @@
+ipalib>=4.5.0
+krbcontext>=0.8
+PyYAML>=3.13
+Flask>=0.12.1
+Flask-HTTPAuth>=3.2.3
+Flask-RESTful>=0.3.6
+gunicorn>=19.9.0

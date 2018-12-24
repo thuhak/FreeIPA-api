@@ -1,0 +1,13 @@
+[Unit]
+Description=FreeIPA API
+After=Network.target
+
+[Service]
+Environment="LANG=en_US.utf8"
+WorkingDirectory=/opt/FreeIPA-api/
+ExecStart=/usr/bin/gunicorn -w 4 -b 0.0.0.0:5000 ipa:app
+Restart=on-failure
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target
