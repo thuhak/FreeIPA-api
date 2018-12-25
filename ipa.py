@@ -96,7 +96,7 @@ class IpaUser(Resource):
                                  givenname=username,
                                  sn=username,
                                  cn=username,
-                                 krbprincipalexpiration=u'20581224151641Z',
+                                 krbpasswordexpiration=u'20581224151641Z',
                                  userpassword=password)
             return {'message': 'add a new user {}'.format(username)}
         except DuplicateEntry:
